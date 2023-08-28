@@ -55,9 +55,6 @@ function App() {
       <button onClick={() => requestProcess('high')}>
         Make Cake (high Temperature)
       </button>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }

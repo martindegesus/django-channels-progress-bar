@@ -77,7 +77,6 @@ class ProgressBarConsumer(WebsocketConsumer):
         self.send_progress_msg("Baking", 4)
         try:
             self.bake()
-            pass
         except ValidationError as e:
             self.send_error_msg(e)
             return None
@@ -88,22 +87,17 @@ class ProgressBarConsumer(WebsocketConsumer):
 
     def gather_ingredients(self):
         time.sleep(1)
-        pass
 
     def prepare_the_batter(self):
         time.sleep(1)
-        pass
 
     def prepare_cake_pans(self):
         time.sleep(1)
-        pass
 
     def bake(self):
         time.sleep(2)
         if self.temperature == "high":
             raise ValidationError("Temperature was too high, the cake burned")
-        pass
 
     def cool_and_frost(self):
         time.sleep(1)
-        pass
